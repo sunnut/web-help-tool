@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<title>百度经验</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/jquery-slide.css">
+</head>
+<body>
+<div id="slide_wrapper">
+	<div class="header">
+		<div class="top clearfix">
+			<div class="title" id="exp-title" style="left:252px;">
+				<h1></h1>
+			</div>
+		</div>
+	</div>
+	<div class="body-wrapper">
+		<div class="body" id="body" style="height:470px;">
+			<div class="step-container">
+				<div class="left-cover cover-hover" style="height:470px;width:252px;">
+					<div class="previous-arrow"></div>
+				</div>
+				<div class="step-play-container" id="step-play-container" style="left:252px;">
+					<div class="step-play-list" id="step-play-list"></div>
+				</div>
+				<div class="right-cover" style="height:470px; width:268px;">
+					<div class="next-arrow"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="step-pager" id="step-pager">
+			<ul id="step-pager-list" class="clearfix" style="width:280px;"></ul>
+		</div>
+	</div>
+
+	<div class="step-item-container" id="step-item-tmp" style="display: none;">
+		<div class="place_holder" style="height:9%"></div>
+		<div class="step-item-textimg-inner clearfix" style="height:82%">
+			<div class="step-text-container left"> <!--左侧文字区域-->
+				<div>
+					<h3 class="step-item-header"><!--左侧文字区域的上方数字-->
+						<span class="current-order-in-step"></span>/<span class="page-num"></span>
+					</h3>
+				</div>
+				<div class="step-text-wrapper img-text-area" texttype="img-text-area" id="step-text-wrapper-1">
+					<p></p>
+				</div>
+			</div>
+			<div class="step-img-container left">
+				<div class="step-img-wrapper step-one-img" steptype="step-one-img" imgloaded="2" style="height: 346px;">
+					<div class="img-cover" style="height: 147px; width: 480px; margin-top: 0px;">
+						<div class="inner-img-cover" style="height: 147px; width: 480px;"></div>
+						<img src="images/step-img-bg.png" _height="147" _width="480">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="place_holder" style="height: 9%"></div>
+	</div>
+
+	<li class="item step" id="step-item" style="display: none;">
+		<a href="javascript:void(0);" class="preview"></a>
+	</li>
+</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-slide.js"></script>
+	<script type="text/javascript">
+		var option = {
+			title: '如何使用XXX',
+			data: [{
+				title: '首先我们先打开百度首页，登录自己的百度账号。如果没有百度账号的，可以在这个页面的右上角点击注册按钮，注册一个百度账号就可以了。',
+				src: 'http://c.hiphotos.baidu.com/exp/w=480/sign=a092942fd6ca7bcb7d7bc6278e086b3f/64380cd7912397dd73d835e85882b2b7d1a287bd.jpg'
+			},{
+				title: '登录账号后，会出现如图页面，这时我们单击"知道"按钮。',
+				src: 'http://b.hiphotos.baidu.com/exp/w=480/sign=f5e7f75d810a19d8cb03850d03fb82c9/7c1ed21b0ef41bd59436461850da81cb38db3df0.jpg'
+			}]
+		};
+		$('#slide_wrapper').slide(option);
+	</script>
+</body>
+</html>
