@@ -1,2 +1,5 @@
+## Background
+A tool to show the product usage in the web browser instead of document.You just need to supply the introduction and the example picture step by step.
 ## Examples
-![Screenshot](https://github.com/sunnut/carousel/blob/master/images/ex.png?raw=true "carousel")
+#### Login
+![Screenshot](https://github.com/sunnut/jq-carousel/blob/master/images/ex.png?raw=true "example")
